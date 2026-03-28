@@ -1,0 +1,193 @@
+:root{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0px;
+    background-color: #ECEAEA;
+}
+
+@font-face {
+    font-family: 'Intro Rust G Base 2 Line';
+    src: url('font-index/IntroRustG-Base2Line.woff2') format('woff2'),
+        url('font-index/IntroRustG-Base2Line.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Intro Head R Base';
+    src: url('font-index/IntroHeadR-Base.woff2') format('woff2'),
+        url('font-index/IntroHeadR-Base.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.main-wrapper, .aside, .main {
+    border: 1px solid rgba(124, 227, 255, 0.8);
+    
+}
+
+.main-wrapper{
+    height: 100vh;
+    display: flex;
+
+}
+
+
+.aside{
+    width:45%;
+    height:auto;
+    position:relative;  
+    .image-container{  
+        img{
+            box-sizing: border-box;
+            width: 100%;
+            height:100dvh;
+            object-fit:cover;
+            padding:1px;
+        }
+    }
+}
+
+
+.aside>.text-logo{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    top:25%;
+    background-color: black;
+    color:white;
+    width:100%;
+    height:10%;
+    background-color: rgba(64, 153, 235, 0.4);
+    gap:10px;
+}
+
+.text-logo{
+    span{
+        opacity:1;
+        align-self: center;
+        font-size:larger;
+        font-weight: bold;
+        font-family: "Intro Head R Base";
+    }   
+    img{
+        height: 40%;
+        width: 40;
+        align-self: center;
+        border-radius: 50px;
+    }
+}
+
+.credit-photo{
+    position:absolute;
+    top:98%;
+    right:20%;
+    color: white;
+    font-size: small;
+    opacity: 0.3;
+}
+.main{
+    min-width:65%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+}
+
+
+
+.user-info-form, .top-article, .top-article-1, .top-article-2{
+    background-color:rgba(64, 153, 235, 0.2);
+    padding:2%;
+ 
+}
+.top-article-1>h3>div{
+    background-color: #B2FFD6;
+    width: fit-content;
+    display: inline-block;
+}
+
+
+
+.user-info-form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 3px solid #B4D6D3;
+    min-height: 25%;
+
+    .user-info-fieldset{
+        display: flex;
+        justify-content: center;
+        gap:50px;
+        border: none;
+    }
+    label{
+        display: block;
+    }
+    
+
+}
+
+
+.side-1, .side-2{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.top-article{
+    margin-bottom:2%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    border-bottom: 3px solid #B4D6D3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40%;
+   
+    
+}
+
+.submit-container{
+    display: block;
+    margin : 0px auto;
+    width:150px;
+    height: auto;
+    margin-top: 2%;
+    button{
+        width:100%;
+        background-color: #9999C3;
+        color: white;
+        border-radius:  4px;
+        
+    }
+}
+
+
+.ask-already-acc{
+    margin-top: 1%;
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    strong{
+        color:#7B8CDE;
+    }
+}
+
+
+
+
