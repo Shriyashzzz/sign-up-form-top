@@ -80,6 +80,7 @@ body{
         font-weight: bold;
         font-family: "Intro Head R Base";
         font-size: 2rem;
+        letter-spacing: 0.2rem;
        
     }   
     img{
@@ -106,6 +107,7 @@ body{
     flex-direction: column;
     justify-content: center;
     gap:15px;
+    background-color: rgba(149, 149, 144, 0.2);
 }
 
 
@@ -187,7 +189,7 @@ body{
     flex-direction: column;
     justify-content: center;
     height: auto;
-    background-color:rgba(64, 153, 235, 0.2);
+    background-color:rgba(183, 182, 168, 0.2);
 
    
     
