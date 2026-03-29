@@ -214,14 +214,16 @@ input:hover{
     border-color: rgb(115, 244, 171, 0.8);
 }
 
+
+
+input:user-invalid{
+    border-color :red;
+}
+
 input:focus{
     outline: none;
     border-color:blue;
     box-shadow:  0 4px 10px -1px black;
-}
-
-input:user-invalid{
-    border-color :red;
 }
 
 input:user-valid{
