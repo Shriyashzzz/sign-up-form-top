@@ -72,6 +72,7 @@ body{
 }
 
 .text-logo{
+
     span{
         display: block;
         opacity:1;
@@ -79,7 +80,8 @@ body{
         font-size:larger;
         font-weight: bold;
         font-family: "Intro Head R Base";
-        
+        font-size: 2rem;
+       
     }   
     img{
         height: 40%;
@@ -229,9 +231,15 @@ input:user-valid{
     display: block;
     text-align: center;
     font-size: 0.8rem;
-    strong{
+    a{  
+        text-decoration: none;
+        strong{
         color:#7B8CDE;
+        
     }
+
+    }
+    
 }
 
 
