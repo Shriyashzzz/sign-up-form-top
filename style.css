@@ -30,7 +30,8 @@ body{
 
 
 .main-wrapper, .aside, .main {
-    border: 1px solid rgba(124, 227, 255, 0.8);
+    padding:0px;
+    margin:0px;
     
 }
 
@@ -42,8 +43,9 @@ body{
 
 
 .aside{
-    width:45%;
+  
     height:auto;
+    min-width:45%;
     position:relative;  
     .image-container{  
         img{
@@ -51,7 +53,6 @@ body{
             width: 100%;
             height:100dvh;
             object-fit:cover;
-            padding:1px;
         }
     }
 }
@@ -72,11 +73,13 @@ body{
 
 .text-logo{
     span{
+        display: block;
         opacity:1;
         align-self: center;
         font-size:larger;
         font-weight: bold;
         font-family: "Intro Head R Base";
+        
     }   
     img{
         height: 40%;
@@ -93,22 +96,40 @@ body{
     color: white;
     font-size: small;
     opacity: 0.3;
+    min-width: 40%;
 }
 .main{
-    min-width:65%;
+   min-width: auto;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:10px;
+    gap:15px;
 }
 
 
 
 .user-info-form, .top-article, .top-article-1, .top-article-2{
-    background-color:rgba(64, 153, 235, 0.2);
+    text-wrap: pretty;
     padding:2%;
  
+}
+
+.top-article-1{
+    background-color:rgba(64, 153, 235, 0.2);
+    section{
+        margin-top:5%;
+        border-bottom: 3px solid #959d9c;
+
+        
+    }
+}
+
+
+.top-article-2{
+    background-color:rgba(64, 153, 235, 0.2);
+    border-bottom: 3px solid #B4D6D3;
+
 }
 .top-article-1>h3>div{
     background-color: #B2FFD6;
@@ -122,13 +143,16 @@ body{
     display: flex;
     flex-direction: column;
     gap:20px;
+    justify-content: center;
     font-family: 'Poppins', sans-serif;
     border-bottom: 3px solid #B4D6D3;
     min-height: 25%;
+    background-color:rgba(64, 153, 235, 0.2);
 
     .user-info-fieldset{
         display: flex;
         justify-content: center;
+        align-items: center;
         gap:50px;
         border: none;
     }
@@ -153,11 +177,12 @@ body{
     text-transform: uppercase; 
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-    border-bottom: 3px solid #B4D6D3;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 40%;
+    height: auto;
+    background-color:rgba(64, 153, 235, 0.2);
+
    
     
 }
@@ -167,15 +192,36 @@ body{
     margin : 0px auto;
     width:150px;
     height: auto;
-    margin-top: 2%;
     button{
         width:100%;
         background-color: #9999C3;
         color: white;
         border-radius:  4px;
+        height:2rem;
         
     }
 }
+
+input:hover{
+    border-color: rgb(115, 244, 171, 0.8);
+}
+
+input:focus{
+    outline: none;
+    border-color:blue;
+    box-shadow:  0 4px 10px -1px black;
+}
+
+input:user-invalid{
+    border-color :red;
+}
+
+input:user-valid{
+    border-color: green;
+        box-shadow:  0 4px 10px -1px green;
+
+}
+
 
 
 .ask-already-acc{

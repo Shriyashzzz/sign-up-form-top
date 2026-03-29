@@ -25,13 +25,14 @@
             <article class = "top-article">
                 <div class = "top-article-1">
                     <h3>
-                        <div>Expereinced</div> in taking students <div>from "I&apos;m Cooked" to Grade A*</div><br> Let&apos;s go!
-                        Sign up <em>now</em> to get Started
+                        <div>Expereinced</div> in taking students <div>from "I&apos;m Cooked" to Grade A*</div>
+                        <section> Let&apos;s go!
+                        Sign up <em>now</em> to get Started</section>
                     </h3>
                     </div>
                     <div class = "top-article-2">
                         <h3>
-                        Take charge of your future. <em>Starting Now!</em>
+                        Take charge of your future. <em><u>Starting Now!</u></em>
                         </h3>
                     </div>
                 
@@ -50,13 +51,13 @@
 
 
                         <label for="user-password">Password*</label>
-                        <input type="password" name = "Password" id="user-password" min="8", max="12" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$">
+                        <input type="password" name = "Password" id="user-password" minlength="8", maxlength="12" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$">
 
                     </aside>
 
                     <aside class = "side-2">
                         <label for="last-name">Last Name*</label>
-                        <input type="text" name = "Last Name" id="last-name">
+                        <input type="text" name = "Last Name" id="last-name" required>
                         <label for="user-phone">Phone Number</label>
                         <input type="tel" name = "Phone Number" id = "user-phone" pattern="(?:7|0\d|\+94\d)\d{8}">
                         <label for="confirm-pass">Confirm Password*</label>
@@ -77,17 +78,6 @@
             <div class = "ask-already-acc">
                 Already have an account? <strong>Log in?</strong>               
             </div> 
-            <!--
-                <div class = "password rules">
-                    <ul>
-                        <li>At least 1 Uppercase</li>
-                        <li>At least 1 Lowercase</li>
-                        <li>At least 1 Number</li>
-                        <li>At least 1 Symbol: !@#$%^&*_=+-</li>
-                        <li>Min 8 chars and Max 12 chars</li>
-
-                    </ul>
-            </div>-->
 
 
         </main>
@@ -95,4 +85,5 @@
 
     
 </body>
+
 </html>
