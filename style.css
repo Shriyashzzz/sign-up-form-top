@@ -92,8 +92,8 @@ body{
 
 .credit-photo{
     position:absolute;
-    top:98%;
-    right:20%;
+    top:95%;
+    right:30%;
     color: white;
     font-size: small;
     opacity: 0.3;
@@ -277,7 +277,6 @@ input:user-valid{
 
 @media screen and (min-width: 769px) and (max-width: 1068px) {
 
-    
     .top-article {
         font-size: 1.5rem;
         letter-spacing: 1px;
